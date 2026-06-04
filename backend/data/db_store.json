@@ -1,0 +1,495 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "RentGB Administrator",
+      "email": "admin@gmail.com",
+      "password_hash": "$2a$10$EOrAy5QfWK5k0Tj/9JiN6e9aTm6zI1DPOEUvktxrmyqyfllZ7b0SK",
+      "role": "admin",
+      "is_verified": true,
+      "status": "active",
+      "created_at": "2026-06-04T18:21:10.553Z",
+      "updated_at": "2026-06-04T18:21:10.554Z"
+    },
+    {
+      "id": 2,
+      "name": "Karakoram Properties Ltd.",
+      "email": "owner@gmail.com",
+      "password_hash": "$2a$10$EOrAy5QfWK5k0Tj/9JiN6eff9unAHNIqF2CQjf7AifVaf4p.TB5CO",
+      "role": "owner",
+      "is_verified": true,
+      "status": "active",
+      "created_at": "2026-06-04T18:21:10.554Z",
+      "updated_at": "2026-06-04T18:21:10.554Z"
+    },
+    {
+      "id": 3,
+      "name": "Ali Ahmed",
+      "email": "tenant@gmail.com",
+      "password_hash": "$2a$10$EOrAy5QfWK5k0Tj/9JiN6eSjWoNtLyqHxlB/7D4c3B63mYI6zjzUi",
+      "role": "tenant",
+      "is_verified": true,
+      "status": "active",
+      "created_at": "2026-06-04T18:21:10.554Z",
+      "updated_at": "2026-06-04T18:21:10.554Z"
+    }
+  ],
+  "cities": [
+    {
+      "id": 1,
+      "name": "Gilgit",
+      "image_url": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=800&q=80",
+      "created_at": "2026-06-04T18:21:10.554Z"
+    },
+    {
+      "id": 2,
+      "name": "Skardu",
+      "image_url": "https://images.unsplash.com/photo-1627063410772-2f3b9000dfb3?auto=format&fit=crop&w=800&q=80",
+      "created_at": "2026-06-04T18:21:10.554Z"
+    },
+    {
+      "id": 3,
+      "name": "Hunza",
+      "image_url": "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=800&q=80",
+      "created_at": "2026-06-04T18:21:10.554Z"
+    },
+    {
+      "id": 4,
+      "name": "Nagar",
+      "image_url": "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80",
+      "created_at": "2026-06-04T18:21:10.554Z"
+    },
+    {
+      "id": 5,
+      "name": "Ghizer",
+      "image_url": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+      "created_at": "2026-06-04T18:21:10.554Z"
+    },
+    {
+      "id": 6,
+      "name": "Islamabad",
+      "image_url": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80",
+      "created_at": "2026-06-04T18:21:10.554Z"
+    },
+    {
+      "id": 7,
+      "name": "Karachi",
+      "image_url": "https://images.unsplash.com/photo-1608930264026-619f8cee0d0e?auto=format&fit=crop&w=800&q=80",
+      "created_at": "2026-06-04T18:21:10.554Z"
+    },
+    {
+      "id": 8,
+      "name": "Lahore",
+      "image_url": "https://images.unsplash.com/photo-1599387737281-807597af816c?auto=format&fit=crop&w=800&q=80",
+      "created_at": "2026-06-04T18:21:10.554Z"
+    }
+  ],
+  "owner_profiles": [
+    {
+      "id": 1,
+      "user_id": 2,
+      "business_name": "Karakoram Properties & Rentals",
+      "contact_number": "+92 345 1234567",
+      "business_address": "Main Bazaar, Karimabad, Hunza Valley, Gilgit-Baltistan",
+      "is_verified": true,
+      "company_logo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?auto=format&fit=crop&w=200&q=80",
+      "created_at": "2026-06-04T18:21:10.554Z"
+    }
+  ],
+  "properties": [
+    {
+      "id": 1,
+      "owner_id": 2,
+      "city_id": 3,
+      "title": "Hunza Heights Luxury Guest Cottage",
+      "description": "Enjoy panoramic views of Rakaposhi and Ultar Sar from this gorgeous fully furnished guest cottage. Perfect for families, tourists, and digital nomads looking for high-speed internet and uninterrupted peace in Karimabad. Includes cozy heating, modern bathroom, and fully functional kitchen.",
+      "price": 12000,
+      "category": "home",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "area": "10 Marla",
+      "address": "Zero Point Road, Karimabad, Hunza",
+      "latitude": 36.3167,
+      "longitude": 74.65,
+      "status": "approved",
+      "availability_status": "available",
+      "views_count": 342,
+      "created_at": "2026-05-30T18:21:10.555Z",
+      "updated_at": "2026-06-04T18:21:10.555Z"
+    },
+    {
+      "id": 2,
+      "owner_id": 2,
+      "city_id": 1,
+      "title": "Cozy 1-Bedroom Studio Apartment",
+      "description": "Modern, newly built studio apartment located in the secure and peaceful neighborhood of Jutial, Gilgit. Perfect for working professionals or couples. Safe parking and close to local supermarkets and medical centers.",
+      "price": 4500,
+      "category": "apartment",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "area": "5 Marla",
+      "address": "Jutial Cantt Road, near Serena Hotel, Gilgit",
+      "latitude": 35.9208,
+      "longitude": 74.3089,
+      "status": "approved",
+      "availability_status": "available",
+      "views_count": 189,
+      "created_at": "2026-06-01T18:21:10.555Z",
+      "updated_at": "2026-06-04T18:21:10.555Z"
+    },
+    {
+      "id": 3,
+      "owner_id": 2,
+      "city_id": 2,
+      "title": "Karakoram Boys & Girls Student Hostel Room",
+      "description": "Affordable, shared accommodation rooms specifically designed for college and university students in Skardu. High-speed study friendly WiFi, 24/7 hot water, and a shared study hall. Walking distance from University of Baltistan.",
+      "price": 2500,
+      "category": "hostel",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "area": "300 Sq Ft",
+      "address": "College Road, near UOB Campus, Skardu",
+      "latitude": 35.2981,
+      "longitude": 75.6333,
+      "status": "approved",
+      "availability_status": "available",
+      "views_count": 100,
+      "created_at": "2026-06-03T18:21:10.555Z",
+      "updated_at": "2026-06-04T18:21:10.555Z"
+    },
+    {
+      "id": 4,
+      "owner_id": 2,
+      "city_id": 1,
+      "title": "Commercial Boutique Shop in Main Bazaar",
+      "description": "Excellent business opportunity in the heart of Gilgit. High foot traffic retail space suitable for garments, handicrafts, dry fruit setups, or a mobile outlet. Shutter gates and internal security systems installed.",
+      "price": 22000,
+      "category": "shop",
+      "bedrooms": 0,
+      "bathrooms": 0,
+      "area": "450 Sq Ft",
+      "address": "Saddar Bazaar Main Road, Gilgit",
+      "latitude": 35.9189,
+      "longitude": 74.321,
+      "status": "pending",
+      "availability_status": "available",
+      "views_count": 45,
+      "created_at": "2026-06-04T18:21:10.555Z",
+      "updated_at": "2026-06-04T18:21:10.555Z"
+    },
+    {
+      "id": 5,
+      "owner_id": 2,
+      "city_id": 2,
+      "title": "Premium Multi-Desk Office Space",
+      "description": "Ready-to-move-in commercial office space with multiple cubicles, a meeting table, high-speed backup generators, and clean toilets. Ideal for software agencies, NGOs, or travel operators in Skardu.",
+      "price": 35000,
+      "category": "office",
+      "bedrooms": 0,
+      "bathrooms": 2,
+      "area": "1500 Sq Ft",
+      "address": "Hussaini Chowk, near airport road, Skardu",
+      "latitude": 35.302,
+      "longitude": 75.641,
+      "status": "approved",
+      "availability_status": "available",
+      "views_count": 76,
+      "created_at": "2026-05-25T18:21:10.555Z",
+      "updated_at": "2026-06-04T18:21:10.555Z"
+    }
+  ],
+  "property_images": [
+    {
+      "id": 1,
+      "property_id": 1,
+      "image_url": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80",
+      "is_featured": true,
+      "created_at": "2026-06-04T18:21:10.555Z"
+    },
+    {
+      "id": 2,
+      "property_id": 1,
+      "image_url": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
+      "is_featured": false,
+      "created_at": "2026-06-04T18:21:10.555Z"
+    },
+    {
+      "id": 3,
+      "property_id": 1,
+      "image_url": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=80",
+      "is_featured": false,
+      "created_at": "2026-06-04T18:21:10.555Z"
+    },
+    {
+      "id": 4,
+      "property_id": 2,
+      "image_url": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=1200&q=80",
+      "is_featured": true,
+      "created_at": "2026-06-04T18:21:10.555Z"
+    },
+    {
+      "id": 5,
+      "property_id": 2,
+      "image_url": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80",
+      "is_featured": false,
+      "created_at": "2026-06-04T18:21:10.555Z"
+    },
+    {
+      "id": 6,
+      "property_id": 3,
+      "image_url": "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=1200&q=80",
+      "is_featured": true,
+      "created_at": "2026-06-04T18:21:10.555Z"
+    },
+    {
+      "id": 7,
+      "property_id": 4,
+      "image_url": "https://images.unsplash.com/photo-1582037917204-db05f8576956?auto=format&fit=crop&w=1200&q=80",
+      "is_featured": true,
+      "created_at": "2026-06-04T18:21:10.555Z"
+    },
+    {
+      "id": 8,
+      "property_id": 5,
+      "image_url": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
+      "is_featured": true,
+      "created_at": "2026-06-04T18:21:10.555Z"
+    }
+  ],
+  "amenities": [
+    {
+      "id": 1,
+      "name": "High-speed WiFi",
+      "icon": "Wifi"
+    },
+    {
+      "id": 2,
+      "name": "Hot Water / Geyser",
+      "icon": "Thermometer"
+    },
+    {
+      "id": 3,
+      "name": "Central Heating",
+      "icon": "Flame"
+    },
+    {
+      "id": 4,
+      "name": "Dedicated Parking",
+      "icon": "Car"
+    },
+    {
+      "id": 5,
+      "name": "Scenic Mountain View",
+      "icon": "Compass"
+    },
+    {
+      "id": 6,
+      "name": "24/7 Security Cameras",
+      "icon": "ShieldCheck"
+    },
+    {
+      "id": 7,
+      "name": "Kitchen Facilities",
+      "icon": "Utensils"
+    },
+    {
+      "id": 8,
+      "name": "Power Backup / Generator",
+      "icon": "Zap"
+    }
+  ],
+  "property_amenities": [
+    {
+      "property_id": 1,
+      "amenity_id": 1
+    },
+    {
+      "property_id": 1,
+      "amenity_id": 2
+    },
+    {
+      "property_id": 1,
+      "amenity_id": 3
+    },
+    {
+      "property_id": 1,
+      "amenity_id": 4
+    },
+    {
+      "property_id": 1,
+      "amenity_id": 5
+    },
+    {
+      "property_id": 1,
+      "amenity_id": 7
+    },
+    {
+      "property_id": 1,
+      "amenity_id": 8
+    },
+    {
+      "property_id": 2,
+      "amenity_id": 1
+    },
+    {
+      "property_id": 2,
+      "amenity_id": 2
+    },
+    {
+      "property_id": 2,
+      "amenity_id": 3
+    },
+    {
+      "property_id": 2,
+      "amenity_id": 7
+    },
+    {
+      "property_id": 3,
+      "amenity_id": 1
+    },
+    {
+      "property_id": 3,
+      "amenity_id": 2
+    },
+    {
+      "property_id": 3,
+      "amenity_id": 4
+    },
+    {
+      "property_id": 3,
+      "amenity_id": 8
+    },
+    {
+      "property_id": 5,
+      "amenity_id": 1
+    },
+    {
+      "property_id": 5,
+      "amenity_id": 4
+    },
+    {
+      "property_id": 5,
+      "amenity_id": 6
+    },
+    {
+      "property_id": 5,
+      "amenity_id": 8
+    }
+  ],
+  "favorites": [
+    {
+      "id": 1,
+      "user_id": 3,
+      "property_id": 1,
+      "created_at": "2026-06-04T18:21:10.555Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "sender_id": 3,
+      "receiver_id": 2,
+      "message_text": "Hello, is the Hunza Heights cottage available for long term rent of 3 months?",
+      "is_read": true,
+      "created_at": "2026-06-04T18:11:10.555Z"
+    },
+    {
+      "id": 2,
+      "sender_id": 2,
+      "receiver_id": 3,
+      "message_text": "Yes Ali! It is available. You can schedule a visit request through the portal so we can connect.",
+      "is_read": false,
+      "created_at": "2026-06-04T18:16:10.555Z"
+    }
+  ],
+  "bookings": [
+    {
+      "id": 1,
+      "tenant_id": 3,
+      "property_id": 1,
+      "visit_date": "2026-06-15",
+      "visit_time": "11:00 AM",
+      "status": "pending",
+      "notes": "I would like to schedule a tour of the cottage. I am visiting Hunza from Lahore next week and want to verify details.",
+      "created_at": "2026-06-04T18:21:10.555Z",
+      "updated_at": "2026-06-04T18:21:10.555Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "tenant_id": 3,
+      "property_id": 1,
+      "rating": 5,
+      "review_text": "Absolutely breathtaking! The mountain views are real, and the wifi speed was perfect for my remote work meetings. The owner was extremely helpful and responsive.",
+      "created_at": "2026-06-04T18:21:10.555Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": 1,
+      "user_id": 3,
+      "title": "Welcome to RentGB!",
+      "message": "Your tenant profile is active. Start exploring rental properties in Gilgit-Baltistan without brokers.",
+      "is_read": false,
+      "created_at": "2026-06-04T18:21:10.555Z"
+    },
+    {
+      "id": 2,
+      "user_id": 2,
+      "title": "New Booking Request Received",
+      "message": "Ali Ahmed has requested a visit for your property \"Hunza Heights Luxury Guest Cottage\".",
+      "is_read": false,
+      "created_at": "2026-06-04T18:21:10.555Z"
+    }
+  ],
+  "reports": [
+    {
+      "id": 1,
+      "reporter_id": 3,
+      "reported_user_id": 2,
+      "property_id": 2,
+      "report_type": "spam_property",
+      "description": "Testing report: The pricing shown is slightly lower than what the owner mentioned on call. Please verify.",
+      "status": "pending",
+      "created_at": "2026-06-04T18:21:10.555Z"
+    }
+  ],
+  "activity_logs": [
+    {
+      "id": 1,
+      "user_id": 2,
+      "action": "CREATE_LISTING",
+      "details": "Added property \"Hunza Heights Luxury Guest Cottage\"",
+      "created_at": "2026-06-04T18:21:10.555Z"
+    },
+    {
+      "id": 2,
+      "user_id": 1,
+      "action": "VERIFY_OWNER",
+      "details": "Approved owner account \"Karakoram Properties Ltd.\"",
+      "created_at": "2026-06-04T18:21:10.555Z"
+    },
+    {
+      "id": 3,
+      "user_id": 2,
+      "action": "LOGIN",
+      "details": "Logged into RentGB portal",
+      "created_at": "2026-06-04T18:59:29.789Z"
+    },
+    {
+      "id": 4,
+      "user_id": 1,
+      "action": "LOGIN",
+      "details": "Logged into RentGB portal",
+      "created_at": "2026-06-04T19:00:44.810Z"
+    },
+    {
+      "id": 5,
+      "user_id": 1,
+      "action": "LOGIN",
+      "details": "Logged into RentGB portal",
+      "created_at": "2026-06-04T19:02:27.610Z"
+    }
+  ]
+}
