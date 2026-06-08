@@ -2,11 +2,43 @@
 
 This is the frontend client module of the RentGB broker-free property portal, built using React, Vite, and Tailwind CSS.
 
-## 🚀 Dev Scripts
-From within this folder, you can run:
-*   `npm run dev` - Launches the Vite development server at `http://localhost:5173`.
-*   `npm run build` - Compiles the project assets into production-ready static files in the `dist` folder.
-*   `npm run preview` - Previews the locally built production output.
+## 🛠️ Step-by-Step Run & Setup Instructions
+
+Follow these steps to run the frontend client on your local machine:
+
+### 1. Install Node.js
+Ensure you have Node.js installed. Check version via:
+```bash
+node -v
+npm -v
+```
+
+### 2. Install Dependencies
+Navigate to the `frontend/` directory in your terminal and run:
+```bash
+npm install
+```
+
+### 3. Start Development Server
+Ensure the backend server is running at `http://localhost:5000` (refer to backend README). Then launch the Vite frontend server:
+```bash
+npm run dev
+```
+The client will start, and you can access the application in your browser at:
+`http://localhost:5173`
+
+### 4. Build for Production
+To bundle the frontend for production distribution:
+```bash
+npm run build
+```
+This compiles the code into static files in the `dist/` directory.
+
+### 5. Local Production Preview
+To preview your compiled build locally:
+```bash
+npm run preview
+```
 
 ---
 

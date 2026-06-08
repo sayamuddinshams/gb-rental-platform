@@ -57,6 +57,30 @@ export const saveDb = () => {
 export const mockQuery = async (sql, params = []) => {
   loadDb();
   const cleanSql = sql.trim().replace(/\s+/g, ' ');
+
+  // 0. COUNT / SUM AGGREGATION QUERIES (Admin Dashboard)
+  if (cleanSql.match(/SELECT COUNT\(\*\) as count FROM users WHERE role = 'tenant'/i)) {
+    return { rows: [{ count: dbData.users.filter(u => u.role === 'tenant').length }] };
+  }
+  if (cleanSql.match(/SELECT COUNT\(\*\) as count FROM users WHERE role = 'owner'/i)) {
+    return { rows: [{ count: dbData.users.filter(u => u.role === 'owner').length }] };
+  }
+  if (cleanSql.match(/SELECT COUNT\(\*\) as count FROM users/i)) {
+    return { rows: [{ count: dbData.users.length }] };
+  }
+  if (cleanSql.match(/SELECT COUNT\(\*\) as count FROM properties WHERE status = 'approved'/i)) {
+    return { rows: [{ count: dbData.properties.filter(p => p.status === 'approved').length }] };
+  }
+  if (cleanSql.match(/SELECT COUNT\(\*\) as count FROM properties/i)) {
+    return { rows: [{ count: dbData.properties.length }] };
+  }
+  if (cleanSql.match(/SELECT SUM\(views_count\) as views FROM properties/i)) {
+    const totalViews = dbData.properties.reduce((sum, p) => sum + (p.views_count || 0), 0);
+    return { rows: [{ views: totalViews }] };
+  }
+  if (cleanSql.match(/SELECT COUNT\(\*\) as count FROM reports WHERE status = 'pending'/i)) {
+    return { rows: [{ count: dbData.reports.filter(r => r.status === 'pending').length }] };
+  }
   
   // 1. SELECT USERS BY EMAIL
   if (cleanSql.match(/SELECT \* FROM users WHERE email = \$1/i)) {
@@ -66,7 +90,7 @@ export const mockQuery = async (sql, params = []) => {
   }
 
   // 2. SELECT USERS BY ID
-  if (cleanSql.match(/SELECT \* FROM users WHERE id = \$1/i)) {
+  if (cleanSql.match(/SELECT .* FROM users WHERE id = \$1/i)) {
     const id = parseInt(params[0], 10);
     const rows = dbData.users.filter(u => u.id === id);
     return { rows };
@@ -91,12 +115,12 @@ export const mockQuery = async (sql, params = []) => {
   }
 
   // 4. SELECT ALL USERS (Admin dashboard)
-  if (cleanSql.match(/SELECT \* FROM users ORDER BY id/i) || cleanSql.match(/SELECT \* FROM users/i)) {
+  if (cleanSql.match(/SELECT .* FROM users ORDER BY id/i) || cleanSql.match(/SELECT .* FROM users/i)) {
     return { rows: dbData.users };
   }
 
   // 5. UPDATE USER STATUS (Ban/Unban)
-  if (cleanSql.match(/UPDATE users SET status = \$1,?.* WHERE id = \$2 RETURNING \*/i)) {
+  if (cleanSql.match(/UPDATE users SET status = \$1/i)) {
     const status = params[0];
     const id = parseInt(params[1], 10);
     const userIndex = dbData.users.findIndex(u => u.id === id);
@@ -110,7 +134,7 @@ export const mockQuery = async (sql, params = []) => {
   }
 
   // 6. UPDATE USER DETAILS
-  if (cleanSql.match(/UPDATE users SET name = \$1, email = \$2 WHERE id = \$3 RETURNING \*/i)) {
+  if (cleanSql.match(/UPDATE users SET name = \$1, email = \$2/i)) {
     const name = params[0];
     const email = params[1];
     const id = parseInt(params[2], 10);
@@ -477,7 +501,7 @@ export const mockQuery = async (sql, params = []) => {
   }
 
   // 28. UPDATE BOOKING STATUS
-  if (cleanSql.match(/UPDATE bookings SET status = \$1 WHERE id = \$2 RETURNING \*/i)) {
+  if (cleanSql.match(/UPDATE bookings SET status = \$1/i)) {
     const status = params[0];
     const id = parseInt(params[1], 10);
     const bookingIndex = dbData.bookings.findIndex(b => b.id === id);
@@ -498,7 +522,14 @@ export const mockQuery = async (sql, params = []) => {
       (m.sender_id === userId1 && m.receiver_id === userId2) ||
       (m.sender_id === userId2 && m.receiver_id === userId1)
     );
-    chatRows.sort((a, b) => new Date(a.created_at) - new Date(b.created_at));
+    if (cleanSql.includes('ORDER BY created_at DESC') || cleanSql.includes('DESC LIMIT')) {
+      chatRows.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+    } else {
+      chatRows.sort((a, b) => new Date(a.created_at) - new Date(b.created_at));
+    }
+    if (cleanSql.includes('LIMIT 1')) {
+      return { rows: chatRows.slice(0, 1) };
+    }
     return { rows: chatRows };
   }
 
@@ -705,6 +736,92 @@ export const mockQuery = async (sql, params = []) => {
     dbData.activity_logs.push(newLog);
     saveDb();
     return { rows: [newLog] };
+  }
+
+  // 43. Aggregations (moved to top of mockQuery)
+
+  // 44. OWNER VERIFICATION & BANNING IN USERS / PROFILE
+  if (cleanSql.match(/UPDATE users SET is_verified = true WHERE id = \$1/i)) {
+    const id = parseInt(params[0], 10);
+    const idx = dbData.users.findIndex(u => u.id === id);
+    if (idx !== -1) {
+      dbData.users[idx].is_verified = true;
+      saveDb();
+    }
+    return { rows: [] };
+  }
+  if (cleanSql.match(/UPDATE owner_profiles SET is_verified = true WHERE user_id = \$1/i)) {
+    const userId = parseInt(params[0], 10);
+    const idx = dbData.owner_profiles.findIndex(op => op.user_id === userId);
+    if (idx !== -1) {
+      dbData.owner_profiles[idx].is_verified = true;
+      saveDb();
+    }
+    return { rows: [] };
+  }
+
+  // 45. MESSAGE CONTACTS & RECIPIENTS SELECT
+  if (cleanSql.match(/SELECT DISTINCT receiver_id as id FROM messages WHERE sender_id = \$1/i)) {
+    const senderId = parseInt(params[0], 10);
+    const ids = Array.from(new Set(dbData.messages.filter(m => m.sender_id === senderId).map(m => m.receiver_id)));
+    return { rows: ids.map(id => ({ id })) };
+  }
+  if (cleanSql.match(/SELECT DISTINCT sender_id as id FROM messages WHERE receiver_id = \$1/i)) {
+    const receiverId = parseInt(params[0], 10);
+    const ids = Array.from(new Set(dbData.messages.filter(m => m.receiver_id === receiverId).map(m => m.sender_id)));
+    return { rows: ids.map(id => ({ id })) };
+  }
+  if (cleanSql.match(/SELECT .* FROM users WHERE id IN \(([^)]+)\)/i)) {
+    const match = cleanSql.match(/id IN \(([^)]+)\)/i);
+    const ids = match[1].split(',').map(id => parseInt(id.trim(), 10));
+    const rows = dbData.users.filter(u => ids.includes(u.id));
+    return { rows };
+  }
+  if (cleanSql.match(/UPDATE messages SET is_read = true WHERE sender_id = \$1 AND receiver_id = \$2 AND is_read = false/i)) {
+    const senderId = parseInt(params[0], 10);
+    const receiverId = parseInt(params[1], 10);
+    dbData.messages.forEach(m => {
+      if (m.sender_id === senderId && m.receiver_id === receiverId && !m.is_read) {
+        m.is_read = true;
+      }
+    });
+    saveDb();
+    return { rows: [] };
+  }
+
+  // 46. SELECT SINGLE PROPERTY BY ID / ADMIN SELECTION
+  if (cleanSql.match(/SELECT \* FROM properties WHERE id = \$1/i)) {
+    const id = parseInt(params[0], 10);
+    const rows = dbData.properties.filter(p => p.id === id);
+    return { rows };
+  }
+  if (cleanSql.match(/SELECT id FROM users WHERE role = 'admin'/i) || cleanSql.match(/SELECT id FROM users WHERE role = \$1/i)) {
+    const role = params[0] || 'admin';
+    const rows = dbData.users.filter(u => u.role === role).map(u => ({ id: u.id }));
+    return { rows };
+  }
+
+  // 47. SELECT FAVORITES AND BOOKINGS DETAIL CHECKS
+  if (cleanSql.match(/SELECT \* FROM favorites WHERE user_id = \$1 AND property_id = \$2/i)) {
+    const userId = parseInt(params[0], 10);
+    const propertyId = parseInt(params[1], 10);
+    const rows = dbData.favorites.filter(f => f.user_id === userId && f.property_id === propertyId);
+    return { rows };
+  }
+  if (cleanSql.match(/SELECT b\.\*, p\.title as property_title, p\.owner_id FROM bookings b JOIN properties p/i)) {
+    const id = parseInt(params[0], 10);
+    const booking = dbData.bookings.find(b => b.id === id);
+    if (booking) {
+      const prop = dbData.properties.find(p => p.id === booking.property_id);
+      return {
+        rows: [{
+          ...booking,
+          property_title: prop ? prop.title : 'Unknown Property',
+          owner_id: prop ? prop.owner_id : null
+        }]
+      };
+    }
+    return { rows: [] };
   }
 
   // Fallback default: empty rows

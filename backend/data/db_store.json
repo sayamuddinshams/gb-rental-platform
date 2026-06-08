@@ -4,34 +4,45 @@
       "id": 1,
       "name": "RentGB Administrator",
       "email": "admin@gmail.com",
-      "password_hash": "$2a$10$EOrAy5QfWK5k0Tj/9JiN6e9aTm6zI1DPOEUvktxrmyqyfllZ7b0SK",
+      "password_hash": "$2a$10$yF52UrE.KXZDV/Z/U/O4S.IkSngVweLDM7YcvxJFInhQOV/J1Iq6m",
       "role": "admin",
       "is_verified": true,
       "status": "active",
-      "created_at": "2026-06-04T18:21:10.553Z",
-      "updated_at": "2026-06-04T18:21:10.554Z"
+      "created_at": "2026-06-07T07:51:43.269Z",
+      "updated_at": "2026-06-07T07:51:43.270Z"
     },
     {
       "id": 2,
       "name": "Karakoram Properties Ltd.",
       "email": "owner@gmail.com",
-      "password_hash": "$2a$10$EOrAy5QfWK5k0Tj/9JiN6eff9unAHNIqF2CQjf7AifVaf4p.TB5CO",
+      "password_hash": "$2a$10$yF52UrE.KXZDV/Z/U/O4S.IYm4KGihlnbaNUiNk87oK9mZgXi3RRq",
       "role": "owner",
       "is_verified": true,
       "status": "active",
-      "created_at": "2026-06-04T18:21:10.554Z",
-      "updated_at": "2026-06-04T18:21:10.554Z"
+      "created_at": "2026-06-07T07:51:43.270Z",
+      "updated_at": "2026-06-07T08:05:38.504Z"
     },
     {
       "id": 3,
       "name": "Ali Ahmed",
       "email": "tenant@gmail.com",
-      "password_hash": "$2a$10$EOrAy5QfWK5k0Tj/9JiN6eSjWoNtLyqHxlB/7D4c3B63mYI6zjzUi",
+      "password_hash": "$2a$10$yF52UrE.KXZDV/Z/U/O4S.mBVGMpKCscG6.qDarjEQn5BiQLfF94q",
       "role": "tenant",
       "is_verified": true,
       "status": "active",
-      "created_at": "2026-06-04T18:21:10.554Z",
-      "updated_at": "2026-06-04T18:21:10.554Z"
+      "created_at": "2026-06-07T07:51:43.270Z",
+      "updated_at": "2026-06-07T07:51:43.270Z"
+    },
+    {
+      "id": 4,
+      "name": "sayam uddin",
+      "email": "uddinsayam19@gmail.com",
+      "password_hash": "$2a$10$OtDKJTJlIsxhSmKyjlaYaeancAIZfFnsiWF8WnM9UX2uGvvfHrfn.",
+      "role": "owner",
+      "is_verified": false,
+      "status": "active",
+      "created_at": "2026-06-07T08:09:53.819Z",
+      "updated_at": "2026-06-07T08:10:36.134Z"
     }
   ],
   "cities": [
@@ -39,49 +50,49 @@
       "id": 1,
       "name": "Gilgit",
       "image_url": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=800&q=80",
-      "created_at": "2026-06-04T18:21:10.554Z"
+      "created_at": "2026-06-07T07:51:43.271Z"
     },
     {
       "id": 2,
       "name": "Skardu",
       "image_url": "https://images.unsplash.com/photo-1627063410772-2f3b9000dfb3?auto=format&fit=crop&w=800&q=80",
-      "created_at": "2026-06-04T18:21:10.554Z"
+      "created_at": "2026-06-07T07:51:43.271Z"
     },
     {
       "id": 3,
       "name": "Hunza",
       "image_url": "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=800&q=80",
-      "created_at": "2026-06-04T18:21:10.554Z"
+      "created_at": "2026-06-07T07:51:43.271Z"
     },
     {
       "id": 4,
       "name": "Nagar",
       "image_url": "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80",
-      "created_at": "2026-06-04T18:21:10.554Z"
+      "created_at": "2026-06-07T07:51:43.271Z"
     },
     {
       "id": 5,
       "name": "Ghizer",
       "image_url": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
-      "created_at": "2026-06-04T18:21:10.554Z"
+      "created_at": "2026-06-07T07:51:43.271Z"
     },
     {
       "id": 6,
       "name": "Islamabad",
       "image_url": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80",
-      "created_at": "2026-06-04T18:21:10.554Z"
+      "created_at": "2026-06-07T07:51:43.271Z"
     },
     {
       "id": 7,
       "name": "Karachi",
       "image_url": "https://images.unsplash.com/photo-1608930264026-619f8cee0d0e?auto=format&fit=crop&w=800&q=80",
-      "created_at": "2026-06-04T18:21:10.554Z"
+      "created_at": "2026-06-07T07:51:43.271Z"
     },
     {
       "id": 8,
       "name": "Lahore",
       "image_url": "https://images.unsplash.com/photo-1599387737281-807597af816c?auto=format&fit=crop&w=800&q=80",
-      "created_at": "2026-06-04T18:21:10.554Z"
+      "created_at": "2026-06-07T07:51:43.271Z"
     }
   ],
   "owner_profiles": [
@@ -93,7 +104,17 @@
       "business_address": "Main Bazaar, Karimabad, Hunza Valley, Gilgit-Baltistan",
       "is_verified": true,
       "company_logo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?auto=format&fit=crop&w=200&q=80",
-      "created_at": "2026-06-04T18:21:10.554Z"
+      "created_at": "2026-06-07T07:51:43.271Z"
+    },
+    {
+      "id": 2,
+      "user_id": 4,
+      "business_name": "HUSTLE HUB",
+      "contact_number": "03223456677",
+      "business_address": "Murtazabad Bala PO And Tehsil Aliabad District Hunza , Gilgit Baltistan",
+      "company_logo": null,
+      "is_verified": false,
+      "created_at": "2026-06-07T08:09:53.820Z"
     }
   ],
   "properties": [
@@ -113,9 +134,9 @@
       "longitude": 74.65,
       "status": "approved",
       "availability_status": "available",
-      "views_count": 342,
-      "created_at": "2026-05-30T18:21:10.555Z",
-      "updated_at": "2026-06-04T18:21:10.555Z"
+      "views_count": 344,
+      "created_at": "2026-06-02T07:51:43.271Z",
+      "updated_at": "2026-06-07T07:51:43.271Z"
     },
     {
       "id": 2,
@@ -133,9 +154,9 @@
       "longitude": 74.3089,
       "status": "approved",
       "availability_status": "available",
-      "views_count": 189,
-      "created_at": "2026-06-01T18:21:10.555Z",
-      "updated_at": "2026-06-04T18:21:10.555Z"
+      "views_count": 191,
+      "created_at": "2026-06-04T07:51:43.271Z",
+      "updated_at": "2026-06-07T07:51:43.271Z"
     },
     {
       "id": 3,
@@ -154,8 +175,8 @@
       "status": "approved",
       "availability_status": "available",
       "views_count": 100,
-      "created_at": "2026-06-03T18:21:10.555Z",
-      "updated_at": "2026-06-04T18:21:10.555Z"
+      "created_at": "2026-06-06T07:51:43.271Z",
+      "updated_at": "2026-06-07T07:51:43.271Z"
     },
     {
       "id": 4,
@@ -171,11 +192,11 @@
       "address": "Saddar Bazaar Main Road, Gilgit",
       "latitude": 35.9189,
       "longitude": 74.321,
-      "status": "pending",
+      "status": "approved",
       "availability_status": "available",
-      "views_count": 45,
-      "created_at": "2026-06-04T18:21:10.555Z",
-      "updated_at": "2026-06-04T18:21:10.555Z"
+      "views_count": 58,
+      "created_at": "2026-06-07T07:51:43.271Z",
+      "updated_at": "2026-06-07T08:19:25.666Z"
     },
     {
       "id": 5,
@@ -193,9 +214,49 @@
       "longitude": 75.641,
       "status": "approved",
       "availability_status": "available",
-      "views_count": 76,
-      "created_at": "2026-05-25T18:21:10.555Z",
-      "updated_at": "2026-06-04T18:21:10.555Z"
+      "views_count": 78,
+      "created_at": "2026-05-28T07:51:43.271Z",
+      "updated_at": "2026-06-07T07:51:43.271Z"
+    },
+    {
+      "id": 6,
+      "owner_id": 2,
+      "city_id": 3,
+      "title": "sayam house ",
+      "description": "this is a good office space.",
+      "price": 15000,
+      "category": "office",
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "area": "12 marla",
+      "address": "hunza Aliabad",
+      "latitude": 35.9,
+      "longitude": 74.3,
+      "status": "approved",
+      "availability_status": "available",
+      "views_count": 4,
+      "created_at": "2026-06-07T08:02:40.328Z",
+      "updated_at": "2026-06-07T08:03:07.323Z"
+    },
+    {
+      "id": 7,
+      "owner_id": 4,
+      "city_id": 1,
+      "title": "office space",
+      "description": "good office space for freelancing",
+      "price": 20000,
+      "category": "office",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "area": "1 kanal",
+      "address": "danyore",
+      "latitude": 35.9,
+      "longitude": 74.3,
+      "status": "approved",
+      "availability_status": "available",
+      "views_count": 10,
+      "created_at": "2026-06-07T08:12:41.266Z",
+      "updated_at": "2026-06-07T08:15:53.616Z"
     }
   ],
   "property_images": [
@@ -204,56 +265,91 @@
       "property_id": 1,
       "image_url": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80",
       "is_featured": true,
-      "created_at": "2026-06-04T18:21:10.555Z"
+      "created_at": "2026-06-07T07:51:43.271Z"
     },
     {
       "id": 2,
       "property_id": 1,
       "image_url": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
       "is_featured": false,
-      "created_at": "2026-06-04T18:21:10.555Z"
+      "created_at": "2026-06-07T07:51:43.271Z"
     },
     {
       "id": 3,
       "property_id": 1,
       "image_url": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=80",
       "is_featured": false,
-      "created_at": "2026-06-04T18:21:10.555Z"
+      "created_at": "2026-06-07T07:51:43.271Z"
     },
     {
       "id": 4,
       "property_id": 2,
       "image_url": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=1200&q=80",
       "is_featured": true,
-      "created_at": "2026-06-04T18:21:10.555Z"
+      "created_at": "2026-06-07T07:51:43.271Z"
     },
     {
       "id": 5,
       "property_id": 2,
       "image_url": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80",
       "is_featured": false,
-      "created_at": "2026-06-04T18:21:10.555Z"
+      "created_at": "2026-06-07T07:51:43.271Z"
     },
     {
       "id": 6,
       "property_id": 3,
       "image_url": "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=1200&q=80",
       "is_featured": true,
-      "created_at": "2026-06-04T18:21:10.555Z"
-    },
-    {
-      "id": 7,
-      "property_id": 4,
-      "image_url": "https://images.unsplash.com/photo-1582037917204-db05f8576956?auto=format&fit=crop&w=1200&q=80",
-      "is_featured": true,
-      "created_at": "2026-06-04T18:21:10.555Z"
+      "created_at": "2026-06-07T07:51:43.271Z"
     },
     {
       "id": 8,
       "property_id": 5,
       "image_url": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
       "is_featured": true,
-      "created_at": "2026-06-04T18:21:10.555Z"
+      "created_at": "2026-06-07T07:51:43.271Z"
+    },
+    {
+      "id": 9,
+      "property_id": 6,
+      "image_url": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80",
+      "is_featured": true,
+      "created_at": "2026-06-07T08:02:40.330Z"
+    },
+    {
+      "id": 10,
+      "property_id": 6,
+      "image_url": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80",
+      "is_featured": false,
+      "created_at": "2026-06-07T08:02:40.331Z"
+    },
+    {
+      "id": 11,
+      "property_id": 7,
+      "image_url": "https://images.unsplash.com/photo-1531973576160-7125cd663d86?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "is_featured": true,
+      "created_at": "2026-06-07T08:15:53.618Z"
+    },
+    {
+      "id": 12,
+      "property_id": 7,
+      "image_url": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "is_featured": false,
+      "created_at": "2026-06-07T08:15:53.619Z"
+    },
+    {
+      "id": 13,
+      "property_id": 4,
+      "image_url": "https://images.unsplash.com/photo-1725073864404-48b55e51f8dd?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "is_featured": true,
+      "created_at": "2026-06-07T08:19:25.669Z"
+    },
+    {
+      "id": 14,
+      "property_id": 4,
+      "image_url": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80",
+      "is_featured": false,
+      "created_at": "2026-06-07T08:19:25.670Z"
     }
   ],
   "amenities": [
@@ -374,6 +470,42 @@
     {
       "property_id": 5,
       "amenity_id": 8
+    },
+    {
+      "property_id": 6,
+      "amenity_id": 1
+    },
+    {
+      "property_id": 6,
+      "amenity_id": 2
+    },
+    {
+      "property_id": 6,
+      "amenity_id": 7
+    },
+    {
+      "property_id": 6,
+      "amenity_id": 8
+    },
+    {
+      "property_id": 6,
+      "amenity_id": 3
+    },
+    {
+      "property_id": 7,
+      "amenity_id": 1
+    },
+    {
+      "property_id": 7,
+      "amenity_id": 2
+    },
+    {
+      "property_id": 4,
+      "amenity_id": 1
+    },
+    {
+      "property_id": 4,
+      "amenity_id": 2
     }
   ],
   "favorites": [
@@ -381,7 +513,7 @@
       "id": 1,
       "user_id": 3,
       "property_id": 1,
-      "created_at": "2026-06-04T18:21:10.555Z"
+      "created_at": "2026-06-07T07:51:43.272Z"
     }
   ],
   "messages": [
@@ -391,15 +523,47 @@
       "receiver_id": 2,
       "message_text": "Hello, is the Hunza Heights cottage available for long term rent of 3 months?",
       "is_read": true,
-      "created_at": "2026-06-04T18:11:10.555Z"
+      "created_at": "2026-06-07T07:41:43.272Z"
     },
     {
       "id": 2,
       "sender_id": 2,
       "receiver_id": 3,
       "message_text": "Yes Ali! It is available. You can schedule a visit request through the portal so we can connect.",
+      "is_read": true,
+      "created_at": "2026-06-07T07:46:43.272Z"
+    },
+    {
+      "id": 3,
+      "sender_id": 3,
+      "receiver_id": 2,
+      "message_text": "hi there?",
       "is_read": false,
-      "created_at": "2026-06-04T18:16:10.555Z"
+      "created_at": "2026-06-07T07:58:32.365Z"
+    },
+    {
+      "id": 4,
+      "sender_id": 1,
+      "receiver_id": 2,
+      "message_text": "hello dear how are you?",
+      "is_read": false,
+      "created_at": "2026-06-07T08:04:40.614Z"
+    },
+    {
+      "id": 5,
+      "sender_id": 4,
+      "receiver_id": 4,
+      "message_text": "hi hustle hub\n",
+      "is_read": false,
+      "created_at": "2026-06-07T08:16:43.608Z"
+    },
+    {
+      "id": 6,
+      "sender_id": 3,
+      "receiver_id": 2,
+      "message_text": "hello",
+      "is_read": false,
+      "created_at": "2026-06-07T08:41:26.924Z"
     }
   ],
   "bookings": [
@@ -411,8 +575,19 @@
       "visit_time": "11:00 AM",
       "status": "pending",
       "notes": "I would like to schedule a tour of the cottage. I am visiting Hunza from Lahore next week and want to verify details.",
-      "created_at": "2026-06-04T18:21:10.555Z",
-      "updated_at": "2026-06-04T18:21:10.555Z"
+      "created_at": "2026-06-07T07:51:43.272Z",
+      "updated_at": "2026-06-07T07:51:43.272Z"
+    },
+    {
+      "id": 2,
+      "tenant_id": 3,
+      "property_id": 3,
+      "visit_date": "2026-06-01",
+      "visit_time": "10:00 AM",
+      "notes": "hi we are tw students from hunza eed two bed for two year.",
+      "status": "approved",
+      "created_at": "2026-06-07T07:59:03.885Z",
+      "updated_at": "2026-06-07T08:00:26.943Z"
     }
   ],
   "reviews": [
@@ -422,7 +597,7 @@
       "property_id": 1,
       "rating": 5,
       "review_text": "Absolutely breathtaking! The mountain views are real, and the wifi speed was perfect for my remote work meetings. The owner was extremely helpful and responsive.",
-      "created_at": "2026-06-04T18:21:10.555Z"
+      "created_at": "2026-06-07T07:51:43.272Z"
     }
   ],
   "notifications": [
@@ -432,7 +607,7 @@
       "title": "Welcome to RentGB!",
       "message": "Your tenant profile is active. Start exploring rental properties in Gilgit-Baltistan without brokers.",
       "is_read": false,
-      "created_at": "2026-06-04T18:21:10.555Z"
+      "created_at": "2026-06-07T07:51:43.272Z"
     },
     {
       "id": 2,
@@ -440,7 +615,143 @@
       "title": "New Booking Request Received",
       "message": "Ali Ahmed has requested a visit for your property \"Hunza Heights Luxury Guest Cottage\".",
       "is_read": false,
-      "created_at": "2026-06-04T18:21:10.555Z"
+      "created_at": "2026-06-07T07:51:43.272Z"
+    },
+    {
+      "id": 3,
+      "user_id": 2,
+      "title": "New Message Received",
+      "message": "You received a message from Ali Ahmed: \"hi there?\"",
+      "is_read": false,
+      "created_at": "2026-06-07T07:58:32.366Z"
+    },
+    {
+      "id": 4,
+      "user_id": 2,
+      "title": "New Visit Request Scheduled",
+      "message": "Ali Ahmed has requested a visit for your listing \"Karakoram Boys & Girls Student Hostel Room\" on 2026-06-01 at 10:00 AM.",
+      "is_read": false,
+      "created_at": "2026-06-07T07:59:03.887Z"
+    },
+    {
+      "id": 5,
+      "user_id": 3,
+      "title": "Visit Request Approved",
+      "message": "Your visit request for \"Karakoram Boys & Girls Student Hostel Room\" on 2026-06-01 has been approved by the owner.",
+      "is_read": false,
+      "created_at": "2026-06-07T08:00:26.945Z"
+    },
+    {
+      "id": 6,
+      "user_id": 1,
+      "title": "New Property Listing Pending Approval",
+      "message": "Owner Karakoram Properties Ltd. posted a new property: sayam house ",
+      "is_read": false,
+      "created_at": "2026-06-07T08:02:40.336Z"
+    },
+    {
+      "id": 7,
+      "user_id": 2,
+      "title": "New Property Listing Pending Approval",
+      "message": "Owner Karakoram Properties Ltd. posted a new property: sayam house ",
+      "is_read": false,
+      "created_at": "2026-06-07T08:02:40.336Z"
+    },
+    {
+      "id": 8,
+      "user_id": 3,
+      "title": "New Property Listing Pending Approval",
+      "message": "Owner Karakoram Properties Ltd. posted a new property: sayam house ",
+      "is_read": false,
+      "created_at": "2026-06-07T08:02:40.337Z"
+    },
+    {
+      "id": 9,
+      "user_id": 2,
+      "title": "Listing Approved",
+      "message": "Your property listing \"sayam house \" has been approved and is now public.",
+      "is_read": false,
+      "created_at": "2026-06-07T08:03:07.324Z"
+    },
+    {
+      "id": 10,
+      "user_id": 2,
+      "title": "Listing Approved",
+      "message": "Your property listing \"Commercial Boutique Shop in Main Bazaar\" has been approved and is now public.",
+      "is_read": false,
+      "created_at": "2026-06-07T08:03:12.542Z"
+    },
+    {
+      "id": 11,
+      "user_id": 2,
+      "title": "New Message Received",
+      "message": "You received a message from RentGB Administrator: \"hello dear how are you?\"",
+      "is_read": false,
+      "created_at": "2026-06-07T08:04:40.615Z"
+    },
+    {
+      "id": 12,
+      "user_id": 4,
+      "title": "Welcome to RentGB!",
+      "message": "Your owner profile has been registered. Please complete your profile details for verification.",
+      "is_read": false,
+      "created_at": "2026-06-07T08:09:53.821Z"
+    },
+    {
+      "id": 13,
+      "user_id": 1,
+      "title": "New Property Listing Pending Approval",
+      "message": "Owner sayam uddin posted a new property: office space",
+      "is_read": false,
+      "created_at": "2026-06-07T08:12:41.275Z"
+    },
+    {
+      "id": 14,
+      "user_id": 2,
+      "title": "New Property Listing Pending Approval",
+      "message": "Owner sayam uddin posted a new property: office space",
+      "is_read": false,
+      "created_at": "2026-06-07T08:12:41.276Z"
+    },
+    {
+      "id": 15,
+      "user_id": 3,
+      "title": "New Property Listing Pending Approval",
+      "message": "Owner sayam uddin posted a new property: office space",
+      "is_read": false,
+      "created_at": "2026-06-07T08:12:41.277Z"
+    },
+    {
+      "id": 16,
+      "user_id": 4,
+      "title": "New Property Listing Pending Approval",
+      "message": "Owner sayam uddin posted a new property: office space",
+      "is_read": false,
+      "created_at": "2026-06-07T08:12:41.278Z"
+    },
+    {
+      "id": 17,
+      "user_id": 4,
+      "title": "Listing Approved",
+      "message": "Your property listing \"office space\" has been approved and is now public.",
+      "is_read": false,
+      "created_at": "2026-06-07T08:13:29.844Z"
+    },
+    {
+      "id": 18,
+      "user_id": 4,
+      "title": "New Message Received",
+      "message": "You received a message from sayam uddin: \"hi hustle hub\n\"",
+      "is_read": false,
+      "created_at": "2026-06-07T08:16:43.609Z"
+    },
+    {
+      "id": 19,
+      "user_id": 2,
+      "title": "New Message Received",
+      "message": "You received a message from Ali Ahmed: \"hello\"",
+      "is_read": false,
+      "created_at": "2026-06-07T08:41:26.927Z"
     }
   ],
   "reports": [
@@ -452,7 +763,7 @@
       "report_type": "spam_property",
       "description": "Testing report: The pricing shown is slightly lower than what the owner mentioned on call. Please verify.",
       "status": "pending",
-      "created_at": "2026-06-04T18:21:10.555Z"
+      "created_at": "2026-06-07T07:51:43.272Z"
     }
   ],
   "activity_logs": [
@@ -461,35 +772,161 @@
       "user_id": 2,
       "action": "CREATE_LISTING",
       "details": "Added property \"Hunza Heights Luxury Guest Cottage\"",
-      "created_at": "2026-06-04T18:21:10.555Z"
+      "created_at": "2026-06-07T07:51:43.272Z"
     },
     {
       "id": 2,
       "user_id": 1,
       "action": "VERIFY_OWNER",
       "details": "Approved owner account \"Karakoram Properties Ltd.\"",
-      "created_at": "2026-06-04T18:21:10.555Z"
+      "created_at": "2026-06-07T07:51:43.272Z"
     },
     {
       "id": 3,
-      "user_id": 2,
+      "user_id": 3,
       "action": "LOGIN",
       "details": "Logged into RentGB portal",
-      "created_at": "2026-06-04T18:59:29.789Z"
+      "created_at": "2026-06-07T07:57:49.002Z"
     },
     {
       "id": 4,
-      "user_id": 1,
-      "action": "LOGIN",
-      "details": "Logged into RentGB portal",
-      "created_at": "2026-06-04T19:00:44.810Z"
+      "user_id": 3,
+      "action": "CREATE_BOOKING",
+      "details": "Requested visit to property (ID: 3, Booking ID: 2)",
+      "created_at": "2026-06-07T07:59:03.888Z"
     },
     {
       "id": 5,
+      "user_id": 2,
+      "action": "LOGIN",
+      "details": "Logged into RentGB portal",
+      "created_at": "2026-06-07T07:59:40.204Z"
+    },
+    {
+      "id": 6,
+      "user_id": 2,
+      "action": "UPDATE_BOOKING_STATUS",
+      "details": "Set booking ID 2 status to approved",
+      "created_at": "2026-06-07T08:00:26.946Z"
+    },
+    {
+      "id": 7,
+      "user_id": 2,
+      "action": "CREATE_PROPERTY",
+      "details": "Created property \"sayam house \" (ID: 6)",
+      "created_at": "2026-06-07T08:02:40.338Z"
+    },
+    {
+      "id": 8,
       "user_id": 1,
       "action": "LOGIN",
       "details": "Logged into RentGB portal",
-      "created_at": "2026-06-04T19:02:27.610Z"
+      "created_at": "2026-06-07T08:02:51.978Z"
+    },
+    {
+      "id": 9,
+      "user_id": 1,
+      "action": "APPROVE_PROPERTY",
+      "details": "Set status of property \"sayam house \" (ID: 6) to approved",
+      "created_at": "2026-06-07T08:03:07.326Z"
+    },
+    {
+      "id": 10,
+      "user_id": 1,
+      "action": "APPROVE_PROPERTY",
+      "details": "Set status of property \"Commercial Boutique Shop in Main Bazaar\" (ID: 4) to approved",
+      "created_at": "2026-06-07T08:03:12.543Z"
+    },
+    {
+      "id": 11,
+      "user_id": 1,
+      "action": "BAN_USER",
+      "details": "Set status of user \"Karakoram Properties Ltd.\" (ID: 2) to suspended",
+      "created_at": "2026-06-07T08:05:36.495Z"
+    },
+    {
+      "id": 12,
+      "user_id": 1,
+      "action": "UNBAN_USER",
+      "details": "Set status of user \"Karakoram Properties Ltd.\" (ID: 2) to active",
+      "created_at": "2026-06-07T08:05:38.505Z"
+    },
+    {
+      "id": 13,
+      "user_id": 4,
+      "action": "REGISTER",
+      "details": "Registered new user with role: owner",
+      "created_at": "2026-06-07T08:09:53.822Z"
+    },
+    {
+      "id": 14,
+      "user_id": 4,
+      "action": "UPDATE_PROFILE",
+      "details": "Updated profile information",
+      "created_at": "2026-06-07T08:10:36.136Z"
+    },
+    {
+      "id": 15,
+      "user_id": 4,
+      "action": "CREATE_PROPERTY",
+      "details": "Created property \"office space\" (ID: 7)",
+      "created_at": "2026-06-07T08:12:41.279Z"
+    },
+    {
+      "id": 16,
+      "user_id": 1,
+      "action": "LOGIN",
+      "details": "Logged into RentGB portal",
+      "created_at": "2026-06-07T08:13:10.552Z"
+    },
+    {
+      "id": 17,
+      "user_id": 1,
+      "action": "APPROVE_PROPERTY",
+      "details": "Set status of property \"office space\" (ID: 7) to approved",
+      "created_at": "2026-06-07T08:13:29.845Z"
+    },
+    {
+      "id": 18,
+      "user_id": 4,
+      "action": "LOGIN",
+      "details": "Logged into RentGB portal",
+      "created_at": "2026-06-07T08:14:39.274Z"
+    },
+    {
+      "id": 19,
+      "user_id": 4,
+      "action": "UPDATE_PROPERTY",
+      "details": "Updated property \"office space\" (ID: 7)",
+      "created_at": "2026-06-07T08:15:53.623Z"
+    },
+    {
+      "id": 20,
+      "user_id": 4,
+      "action": "LOGIN",
+      "details": "Logged into RentGB portal",
+      "created_at": "2026-06-07T08:17:30.709Z"
+    },
+    {
+      "id": 21,
+      "user_id": 2,
+      "action": "LOGIN",
+      "details": "Logged into RentGB portal",
+      "created_at": "2026-06-07T08:18:16.886Z"
+    },
+    {
+      "id": 22,
+      "user_id": 2,
+      "action": "UPDATE_PROPERTY",
+      "details": "Updated property \"Commercial Boutique Shop in Main Bazaar\" (ID: 4)",
+      "created_at": "2026-06-07T08:19:25.674Z"
+    },
+    {
+      "id": 23,
+      "user_id": 3,
+      "action": "LOGIN",
+      "details": "Logged into RentGB portal",
+      "created_at": "2026-06-07T08:39:42.084Z"
     }
   ]
 }
